@@ -1,0 +1,13 @@
+**********************
+FAQ
+**********************
+
+
+
+Who can access the milestones I created?
+******************************************
+
+1. **Watchers**: watchers of the milestone groups will be able to view details and add comment to milestone inside of the group. Cannot edit any details.
+2. **Workers**: workers of the milestone groups will be able to view details and add comment to milestones inside of the corresponding milestone group. Cam only edit details of the milestones created by the workers.
+3. **Asignee**: assignee of the milestones will be able to view and add comment to the milestone. Assignee can also add tasks, linked issues, web links and attachments but cannot modify anything in the details section.
+4. **Direct Report Manager**: the direct report manager based on the hierarchy chart in :ref:`tools:Org Chart |People|`.

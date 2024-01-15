@@ -1,0 +1,11 @@
+**********************
+Email Notifications
+**********************
+
+Email Notifications will be triggered in the following scenarios:
+
+1. When new milestones or tasks are created and users turn on **Email Notify**, asignees of the milestones/tasks will be notified via email as new milestones/tasks have been assigned.
+2. Inside of milestones/tasks detail page, when changes are mdael, click :guilabel:`Notify by Email` button, corresponding assignees/workers will be notified via email
+3. When milestones/tasks have reached their starting time and the status of the milestones/tasks are still in status :guilabel:`Planned`, email notifications will be sent to assginees to start working on the milestones and change the status to :guilabel:`In Progress`
+4. Within 24 hours of the due date of the milestones/tasks and their status is not :guilabel:`Canceled`, email notifications will be sent to corresponding assignees to remind about the timeline.
+5. If the milestones/tasks are not in status :guilabel:`Done` on due date, email notifications will be sent to the creator of the milestones/tasks to reschedule.

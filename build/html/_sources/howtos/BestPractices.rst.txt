@@ -1,0 +1,54 @@
+**********************
+Best Practices
+**********************
+Milestone management is a crucial part of any successful project. This section covers the best practices of the Teamwork Application. These tips will help you make the most out of the Teamwork App and ensure your projects run smoothly from start to finish.
+
+Establish Clear Tasks with Clear Requirements
+###############################################
+
+When creating an task or milestone in Teamwork, it is essential to clearly define what will be required for the task and set expectations regarding the time frame and due date. This way, everyone involved knows exactly what is expected from them. 
+
+Also, ensure you have thoroughly reviewed the task requirements and communicated any potential changes to the team.
+
+Avoid Unnecessary Details
+###############################################
+
+It’s a common tendency for managers to get bogged down in too much detail. However, an over-emphasis on details can lead to confusion and delays. When creating milestones/tasks in Teamwork, only include the most relevant information necessary to complete the milestone/task.
+
+This will help keep everyone focused on the task at hand without getting sidetracked by other issues that are irrelevant or outside of scope. Too many additional details also increase the time it takes to create the task. So, be concise and precise when creating milestones/tasks in Teamwork.
+
+Keep Milestones/Tasks Organized
+###############################################
+
+The organization is key in Teamwork milestone/task management. By organizing tasks into categories and labeling them appropriately, you will be able to quickly sort through issues and ensure that the right people are working on the right tasks. 
+
+The following features will help you organize milestones/tasks more efficiently and ensure that everyone is on top of their work. 
+
+    * Filter tasks by assignee, due date, and label
+    * Group tasks into time intervals (sprints)
+    * Create issue types and labels
+
+Break Down Large Tasks Into Smaller Ones 
+##############################################
+
+Organizing tasks into smaller chunks makes them easier to manage and track. This practice also ensures that no one gets overwhelmed with a single large task. 
+
+Additionally, breaking down tasks helps you identify potential issues or blockers early in the process and adjust accordingly. You can assign specific task areas to various team members depending on their skill sets and qualifications.  
+
+Set Due Dates And Timelines 
+##############################################
+
+Teamwork lets you set due dates for each milestone/task. Ensure that the team is aware of these deadlines and timelines. This will help everyone stay on track and commit to completing tasks promptly. 
+
+Also, as the manager of a milestone groups, you will find it easier to monitor progress and ensure that tasks are being completed on schedule. By setting due dates, you also ensure that deadlines are not missed. 
+
+Monitor Progress Regularly  
+##############################################
+
+Regularly monitoring your team’s progress is essential to ensure that they are on track with the project and to catch any potential issues before they become too large. It is also essential to keep an eye on deadlines and adjust them if needed. 
+
+With Teamwork, you can assign due dates for each task, set reminders and check-ins by notifying assignees, and monitor the progress of tasks in real-time.
+
+Use Clear Communication
+##############################################
+

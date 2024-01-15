@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Interface Walkthrough &mdash; Ecopia Map Studio 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/EcopiaCircleClear.png"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Common Operations" href="howtos/CommonOperations.html" />
+    <link rel="prev" title="1. Concepts" href="concepts.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Ecopia Map Studio
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">1. Concepts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Interface Walkthrough</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#maps-tab">2.1. Maps Tab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-new-maps-newmapbutton">2.1.1. Create New Maps </a></li>
+<li class="toctree-l3"><a class="reference internal" href="#map-list">2.1.2. Map List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#map-details-panel">2.1.3. Map Details Panel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#map-style-editor">2.2. Map Style Editor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#map-title-editing">2.2.1. Map Title Editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tileset-panel-tileset-button">2.2.2. Tileset Panel </a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#add-vector-tileset-tool-add-tileset">2.2.2.1. Add Vector Tileset Tool </a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties-tool-propertiesbutton">2.2.2.2. Properties Tool  </a></li>
+<li class="toctree-l4"><a class="reference internal" href="#style-options-tool-stylebutton">2.2.2.3. Style Options Tool </a></li>
+<li class="toctree-l4"><a class="reference internal" href="#label-tool-labelbutton">2.2.2.4. Label Tool </a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#base-map-panel-base-map-button">2.2.3. Base-map Panel </a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#add-basemap-tileset-tool-add-tileset">2.2.3.1. Add Basemap Tileset Tool </a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#search-location-tool-search-location-button">2.2.4. Search Location Tool </a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-lighting-time-tool-clock">2.2.5. Set Lighting Time Tool </a></li>
+<li class="toctree-l3"><a class="reference internal" href="#capture-view-tool-capture-preview-button">2.2.6. Capture View Tool </a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-3d-map-attachment-tool-link-button">2.2.7. 2D-3D Map Attachment Tool </a></li>
+<li class="toctree-l3"><a class="reference internal" href="#publish-map-tool-publish">2.2.8. Publish Map Tool </a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tilesets-tab">2.3. Tilesets Tab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-new-tileset-tool">2.3.1. Add New Tileset Tool</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#add-new-tileset-from-drives">2.3.1.1. Add New Tileset from drives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-new-tileset-from-s3">2.3.1.2. Add New Tileset from S3</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tileset-table">2.3.2. Tileset Table</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tileset-type">2.3.2.1. Tileset Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tilesets-actions">2.3.2.2. Tilesets Actions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tileset-detail-information-panel">2.3.3. Tileset Detail Information Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#asynchronous-job-window">2.3.4. Asynchronous Job Window</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tokens-tab">2.4. Tokens Tab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-new-tokens">2.4.1. Create New Tokens</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#access-token-table">2.4.2. Access Token Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#token-scope">2.4.3. Token scope</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Common Operations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="howtos/CommonOperations.html">1. Common Operations</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ecopia Map Studio</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2. </span>Interface Walkthrough</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="interface-walkthrough">
+<h1><span class="section-number">2. </span>Interface Walkthrough<a class="headerlink" href="#interface-walkthrough" title="Permalink to this headline"></a></h1>
+<section id="maps-tab">
+<h2><span class="section-number">2.1. </span>Maps Tab<a class="headerlink" href="#maps-tab" title="Permalink to this headline"></a></h2>
+<p>The Maps tab serves as the central administrative hub for creating and customizing 2D/3D maps, leveraging uploaded data and layering datasets to achieve the desired visualizations. This tab offers flexible publishing options tailored to user requirements, enabling optimal map delivery and presentation.</p>
+<p>From the map page you can create, edit, and see information about any of your created and public ready maps with styles and find links for using your style template in web and mobile applications.</p>
+<figure class="align-center">
+<img alt="Illustration of Maps Tab" src="_images/maps-tab.png" style="width: 550px;" />
+</figure>
+<section id="create-new-maps-newmapbutton">
+<h3><span class="section-number">2.1.1. </span>Create New Maps <img alt="newmapbutton" src="_images/newmap_button.png" style="width: 68px;" /><a class="headerlink" href="#create-new-maps-newmapbutton" title="Permalink to this headline"></a></h3>
+<p>If you would like to build new maps, you can click on the <span class="guilabel">New Map</span> button locate on the right top of the Map List. You will be able to select from 2D or 3D maps.</p>
+<ul class="simple">
+<li><p>2D map story will allow you to add 2d vector layer and 2d imagery tiles for your maps.</p></li>
+<li><p>3D map scene will allow you to add a 3d vector layer and 3d imagery and 3d terrain to demo a 3d scene for your project.</p></li>
+</ul>
+<p>to create a new map, simply select from 2D and 3D and select the templates from below and click on the <span class="guilabel">Create</span> button.</p>
+<figure class="align-center">
+<img alt="Example of usage purpose created for a content" src="_images/create_map.gif" style="width: 450px;" />
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of now, our system only provides a blank map as the default configuration option. In the near future, we intend to improve the user experience by offering a variety of built-in templates, allowing users to construct their maps with greater ease.</p>
+</div>
+</section>
+<section id="map-list">
+<h3><span class="section-number">2.1.2. </span>Map List<a class="headerlink" href="#map-list" title="Permalink to this headline"></a></h3>
+<figure class="align-center" id="id1">
+<img alt="Map List Item Illustration" src="_images/Map-List-Item-Components.png" style="width: 550px;" />
+<figcaption>
+<p><span class="caption-text"><em>Map List Item Illustration</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Each listed map is composed of below components:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><span class="guilabel">2D</span> / <span class="guilabel">3D</span> <strong>Label</strong></p></li>
+<li><p><strong>Map Preview Thumbnail</strong>: captured by <a class="reference internal" href="#capture-view-tool-capture-preview-button"><span class="std std-ref">Capture View Tool </span></a></p></li>
+<li><p><strong>Map Title</strong></p></li>
+<li><p><strong>Relative time and action details</strong>: This is a brief summary of the relative times of modification and publication for this map.</p></li>
+<li><p><strong>Preview Button</strong> <img alt="preview_button" src="_images/preview_button.png" style="width: 22px;" />: Click on this button will open the Map Style Editor that allow you to modify the style of the map.</p></li>
+<li><p><strong>More Actions Button</strong> <img alt="more_action_button" src="_images/more_action_button.png" style="width: 22px;" />: Click on this button will allow you to do the below actions:</p></li>
+</ol>
+<ul>
+<li><p><span class="guilabel">Duplicate</span> Duplicate this map with same settings but unpublished.</p></li>
+<li><p><span class="guilabel">Publish</span> (Only displayed with published maps) Copy publishing information:</p>
+<blockquote>
+<div><ul>
+<li><p>Shared users will be able to view the map with the link in the pop-up link by providing the access token.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="Map List Item Illustration" src="_images/publish_info.png" style="width: 550px;" />
+</figure>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<ul class="simple">
+<li><p><span class="guilabel">Delete</span> : Delete this map permanently.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="map-details-panel">
+<h3><span class="section-number">2.1.3. </span>Map Details Panel<a class="headerlink" href="#map-details-panel" title="Permalink to this headline"></a></h3>
+<figure class="align-center">
+<img alt="Example of a Map Details Panel" src="_images/detail-panel.png" style="width: 550px;" />
+</figure>
+<p>This panel will shows more details with a large thumbnail image of the highlighted map that you clicked on, below are the components of the Map Details Panel:</p>
+<blockquote>
+<div><ul>
+<li><p><strong>Map Title</strong>: This is the Map Title that can be set up in the Map Style Editor.</p></li>
+<li><p><strong>Map ID</strong>: This is the unique ID that can be used to identify this map.</p></li>
+<li><p><strong>Map Preview Thumbnail</strong>: This preview thumbnail can be captured using the Preview Capture tool in the Map Style Editor.</p></li>
+<li><p><strong>Detail Settings</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Types of the map</strong>: We have 2D Map Story and 3D Map Scene as the two default Map Type.</p></li>
+<li><p><strong>Date Added</strong>: The Date and timestamp of map was created and added to Map Studio.</p></li>
+<li><p><strong>Date Updated</strong>: The Date and timestamp of this map when it was last edited.</p></li>
+<li><p><strong>Publish Status</strong>: The Status of whether this map is published or not.</p></li>
+<li><p><strong>Download link of demo HTML file</strong>: The demo HTML file that can be used to visualize the stylized map in your local or your own host.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="map-style-editor">
+<h2><span class="section-number">2.2. </span>Map Style Editor<a class="headerlink" href="#map-style-editor" title="Permalink to this headline"></a></h2>
+<p>The Map Style Editor can be accessed through the Preview Button <img alt="preview_button" src="_images/preview_button.png" style="width: 22px;" /> listed in the Map List of the <a class="reference internal" href="#maps-tab"><span class="std std-ref">Maps Tab</span></a>.</p>
+<figure class="align-center" id="id2">
+<img alt="Example of Map Style Editor" src="_images/map_style_editor.png" style="width: 550px;" />
+<figcaption>
+<p><span class="caption-text"><em>Layout Demo of a 2D Map in Map Style Editor</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>General Tools in Map Style Editor:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#map-title-editing"><span class="std std-ref">Map Title Editing</span></a></p></li>
+<li><p><a class="reference internal" href="#tileset-panel-tileset-button"><span class="std std-ref">Tileset Panel </span></a></p></li>
+<li><p><a class="reference internal" href="#base-map-panel-base-map-button"><span class="std std-ref">Base-map Panel </span></a></p></li>
+<li><p><a class="reference internal" href="#search-location-tool-search-location-button"><span class="std std-ref">Search Location Tool </span></a></p></li>
+<li><p><a class="reference internal" href="#capture-view-tool-capture-preview-button"><span class="std std-ref">Capture View Tool </span></a></p></li>
+<li><p><a class="reference internal" href="#publish-map-tool-publish"><span class="std std-ref">Publish Map Tool </span></a></p></li>
+</ul>
+</div></blockquote>
+<figure class="align-center" id="id3">
+<img alt="Example of Map Style Editor" src="_images/3d_demo_map_style_editor.png" style="width: 550px;" />
+<figcaption>
+<p><span class="caption-text"><em>Layout Demo of 3D Map Specific Tools in Map Style Editor</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>3D Scene Map Specific Tools in Map Style Editor:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#d-3d-map-attachment-tool-link-button"><span class="std std-ref">2D-3D Map Attachment Tool </span></a></p></li>
+<li><p><a class="reference internal" href="#set-lighting-time-tool-clock"><span class="std std-ref">Set Lighting Time Tool </span></a></p></li>
+</ul>
+</div></blockquote>
+<section id="map-title-editing">
+<h3><span class="section-number">2.2.1. </span>Map Title Editing<a class="headerlink" href="#map-title-editing" title="Permalink to this headline"></a></h3>
+<p>Map title can be edited by clicking on the edit button.</p>
+<blockquote>
+<div><figure class="align-center" id="id4">
+<img alt="Example of Map Style Editor" src="_images/name_map.gif" style="width: 350px;" />
+<figcaption>
+<p><span class="caption-text"><em>Demo of how to change Map Title</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="tileset-panel-tileset-button">
+<h3><span class="section-number">2.2.2. </span>Tileset Panel <img alt="Tileset_button" src="_images/Tileset_button.png" style="width: 22px;" /><a class="headerlink" href="#tileset-panel-tileset-button" title="Permalink to this headline"></a></h3>
+<p>Tilesets, on the other hand, provide a powerful data management solution that streamlines the import of data from local drives or S3 into the Map Studio Appilcation. This process is pivotal to the composition of maps within the Maps tab.</p>
+<p>Tileset Panel is designed for add vector tiles into the map. Tileset Panel is composed of the below tools:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#add-vector-tileset-tool-add-tileset"><span class="std std-ref">Add Vector Tileset Tool </span></a></p></li>
+<li><p><a class="reference internal" href="#properties-tool-propertiesbutton"><span class="std std-ref">Properties Tool  </span></a></p></li>
+<li><p><a class="reference internal" href="#style-options-tool-stylebutton"><span class="std std-ref">Style Options Tool </span></a></p></li>
+<li><p><a class="reference internal" href="#label-tool-labelbutton"><span class="std std-ref">Label Tool </span></a></p></li>
+</ul>
+</div></blockquote>
+<section id="add-vector-tileset-tool-add-tileset">
+<h4><span class="section-number">2.2.2.1. </span>Add Vector Tileset Tool <img alt="Add_Tileset" src="_images/AddTileset.png" style="height: 24px;" /><a class="headerlink" href="#add-vector-tileset-tool-add-tileset" title="Permalink to this headline"></a></h4>
+<p>New tilesets with type <strong>2D Tiles</strong> and <strong>3D Tiles</strong> can be added by clicking <img alt="Add_Tileset" src="_images/AddTileset.png" style="height: 24px;" /> button. In the new window, users can select the tilesets that are created by them or shared by other users.</p>
+<blockquote>
+<div><figure class="align-center" id="id5">
+<img alt="Add Tileset" src="_images/Add_Tileset_Vector.gif" style="height: 360px;" />
+<figcaption>
+<p><span class="caption-text"><em>How to Add Tileset</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="properties-tool-propertiesbutton">
+<h4><span class="section-number">2.2.2.2. </span>Properties Tool  <img alt="propertiesbutton" src="_images/properties-icon.png" style="width: 28px;" /><a class="headerlink" href="#properties-tool-propertiesbutton" title="Permalink to this headline"></a></h4>
+<p>Property tools allow users to adjust following settings for layers in the map:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Transparency</strong>: adjust the transparency of map layers</p></li>
+<li><p><strong>Visibility Range</strong>: adjust the visibility on different zoom levels</p></li>
+<li><p><strong>Attribute</strong>: Edit layer style</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center" id="id6">
+<img alt="Example of properties tool" src="_images/properties_tool.png" style="width: 360px;" />
+<figcaption>
+<p><span class="caption-text"><em>Adjust Properties</em></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="style-options-tool-stylebutton">
+<h4><span class="section-number">2.2.2.3. </span>Style Options Tool <img alt="stylebutton" src="_images/style-icon.png" style="width: 22px;" /><a class="headerlink" href="#style-options-tool-stylebutton" title="Permalink to this headline"></a></h4>
+<p>Ecopia’s Map Studio allows users to customize the display properties of geospatial layers. Users can change the colour, transparency, and border (if applicable) of layers by using the style option tool. With the Styles tab under Styles Options tool opened, users can modify the style of their layer as they see fit.</p>
+<p>Layer features can be categorically styled based on a field in your data. Random colours will be assigned to features with different field values and features with the same field value can be styled together.</p>
+<p>Styles Available:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Categorized</strong>: colours will be assigned to features with different field values and features with the same field value can be styled together.</p></li>
+<li><p><strong>Single_Symbol</strong>: one colour style that applies to all features in the map</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center" id="id7">
+<img alt="Example of style option tool" src="_images/style-editing.png" style="width: 360px;" />
+<figcaption>
+<p><span class="caption-text"><em>Style Editing</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="label-tool-labelbutton">
+<h4><span class="section-number">2.2.2.4. </span>Label Tool <img alt="labelbutton" src="_images/label-icon.png" style="width: 24px;" /><a class="headerlink" href="#label-tool-labelbutton" title="Permalink to this headline"></a></h4>
+<p>Label tools allow users to display features’ attributes value based on selected attribute. In addition to the options of turning on/off label and choosing attributes, users can also adjust colors, size, fonts, and style.</p>
+<figure class="align-center" id="id8">
+<img alt="Example of label tool" src="_images/label_tool.png" style="width: 360px;" />
+<figcaption>
+<p><span class="caption-text"><em>Label Editing</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="base-map-panel-base-map-button">
+<h3><span class="section-number">2.2.3. </span>Base-map Panel <img alt="Base_Map_button" src="_images/Base_Map_button.png" style="width: 22px;" /><a class="headerlink" href="#base-map-panel-base-map-button" title="Permalink to this headline"></a></h3>
+<p>Users can add and manage raster layers (imagery or terrain model). Visibility of individual raster asset can also be switched on/off from here.</p>
+<figure class="align-center" id="id9">
+<img alt="Example of basemap panel" src="_images/Base_map_panel.png" style="width: 550px;" />
+<figcaption>
+<p><span class="caption-text"><em>Basemap Panel</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="add-basemap-tileset-tool-add-tileset">
+<h4><span class="section-number">2.2.3.1. </span>Add Basemap Tileset Tool <img alt="Add_Tileset" src="_images/AddTileset.png" style="height: 24px;" /><a class="headerlink" href="#add-basemap-tileset-tool-add-tileset" title="Permalink to this headline"></a></h4>
+<p>This tool can be used to add tileset type with <strong>Raster terrain</strong> and <strong>Raster Imagery</strong>. Users can add raster tileset from the existing list or the ones that are shared by other members of the platform.</p>
+<blockquote>
+<div><figure class="align-center" id="id10">
+<img alt="Add Tileset" src="_images/Add_Tileset_Raster.gif" style="height: 360px;" />
+<figcaption>
+<p><span class="caption-text"><em>How to Add Raster Tileset</em></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+</section>
+<section id="search-location-tool-search-location-button">
+<h3><span class="section-number">2.2.4. </span>Search Location Tool <img alt="Search_Location_button" src="_images/Search_Location_button.png" style="width: 22px;" /><a class="headerlink" href="#search-location-tool-search-location-button" title="Permalink to this headline"></a></h3>
+<p>This Search Location Tool is similar to the Search Location Tool in Map Browser, when you click on the icon, there will be a floating tool display on the right-corner of the Map Viewer.</p>
+<p>when you entered a valid latitude and longitude pair into the Search Location Tool, the Map Viewer will pan to that coordinate.</p>
+<figure class="align-center" id="id11">
+<img alt="The search location tool demo" src="_images/search_location_tool.png" style="width: 500px;" />
+<figcaption>
+<p><span class="caption-text"><em>Lat/Long Input Box</em></span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="set-lighting-time-tool-clock">
+<h3><span class="section-number">2.2.5. </span>Set Lighting Time Tool <img alt="Clock" src="_images/Clock.png" style="height: 24px;" /><a class="headerlink" href="#set-lighting-time-tool-clock" title="Permalink to this headline"></a></h3>
+<figure class="align-center" id="id12">
+<img alt="The search location tool demo" src="_images/Set_Lighting_Time_Tool.png" style="width: 500px;" />
+<figcaption>
+<p><span class="caption-text"><em>Set Lighting Time Tool</em></span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="capture-view-tool-capture-preview-button">
+<h3><span class="section-number">2.2.6. </span>Capture View Tool <img alt="Capture_preview_button" src="_images/Capture_preview_button.png" style="width: 22px;" /><a class="headerlink" href="#capture-view-tool-capture-preview-button" title="Permalink to this headline"></a></h3>
+<p>You can click on this tool when the Map Viewer is showing the desire thumbnail of the map. The preview of the captured view will updated in the Maps Tab regarding the map.</p>
+<p>Captured view for preview / thumbnail is displayed in the detail information panel and the left side of the map list.</p>
+<figure class="align-center" id="id13">
+<img alt="The search location tool demo" src="_images/Demo_capture_view.png" style="width: 500px;" />
+<figcaption>
+<p><span class="caption-text"><em>Capturing View for Thumbnail</em></span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="d-3d-map-attachment-tool-link-button">
+<h3><span class="section-number">2.2.7. </span>2D-3D Map Attachment Tool <img alt="link_button" src="_images/link_button.png" style="width: 26px;" /><a class="headerlink" href="#d-3d-map-attachment-tool-link-button" title="Permalink to this headline"></a></h3>
+<p>2D-3D Map Attachment Tool allows users to bind 2D tilesets with 3D tilesets (or other way around), which provide users with the capability to switch between 2D and 3D for target area.
+By clicking the link icon <img alt="link_button" src="_images/link_button.png" style="width: 26px;" /> on the top right corner of the page, a list of available tilesets for binding will be listed. By clicking on the link icon <img alt="link_button" src="_images/link_button.png" style="width: 26px;" />, on the right of selected tilesets, the corresponding 2D/3D layers will be binded with the map.</p>
+<figure class="align-center" id="id14">
+<img alt="The Attachment of 3D scene to 2D story" src="_images/Attach_3D_to_2D.png" />
+<figcaption>
+<p><span class="caption-text"><em>Link 2D-3D Map</em></span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="publish-map-tool-publish">
+<h3><span class="section-number">2.2.8. </span>Publish Map Tool <img alt="Publish" src="_images/Publish.png" style="height: 25px;" /><a class="headerlink" href="#publish-map-tool-publish" title="Permalink to this headline"></a></h3>
+<p>By clicking on <img alt="Publish" src="_images/Publish.png" style="height: 25px;" />, the current style settings will be applied to all hosting and published map that originated from the current map.</p>
+<p>Settings:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Default show map</strong>: select the default map view, 2D or 3D;</p></li>
+<li><p><strong>Show tileset layer panel</strong>: switch to determine whether tileset layer panel will be displayed in the published map</p></li>
+<li><p><strong>Show imagery layer panel</strong>: switch to determine whether imagery layer panel will be displayed in the published map</p></li>
+<li><p><strong>Show terrain layer</strong>: switch to determine whether terrain layers will be displayed in the published map</p></li>
+<li><p><strong>Hide imagery layer by default</strong>: switch to determine whether the imagery layer will display by default in the demo</p></li>
+<li><p><strong>Hide terrain layer by default</strong>: switch to determine whether the terrain layer will display by default in the demo</p></li>
+<li><p><strong>Show vector layer panel</strong>: switch to determine whether the vector layer panel will display by default in the demo</p></li>
+<li><p><strong>Show raster layer panel</strong>: switch to determine whether the raster layer panel will display by default in the demo</p></li>
+<li><p><strong>Support select feature</strong>: switch to determine whether selecting feature is allowed in the demo</p></li>
+<li><p><strong>Control vector layer opacity</strong>: switch to determine whether the vector layer opacity can be adjusted in the demo</p></li>
+<li><p><strong>Upload logo</strong>: logo file that will be combined with the demo</p></li>
+<li><p><strong>Company Name</strong>: name of the Company</p></li>
+</ul>
+</div></blockquote>
+<figure class="align-center">
+<img alt="Publish map tool interface" src="_images/Publish_Map.png" style="width: 600px;" />
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="tilesets-tab">
+<h2><span class="section-number">2.3. </span>Tilesets Tab<a class="headerlink" href="#tilesets-tab" title="Permalink to this headline"></a></h2>
+<figure class="align-center" id="id15">
+<img alt="Sample Layout of Tilesets Tab" src="_images/tilesets_layout.png" />
+<figcaption>
+<p><span class="caption-text"><em>Layout of Tilesets Tab</em></span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The Tileset Tab has the following components:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#add-new-tileset-tool"><span class="std std-ref">Add New Tileset Tool</span></a>: Create new tileset and add to the existing tileset list</p></li>
+<li><p><a class="reference internal" href="#tileset-table"><span class="std std-ref">Tileset Table</span></a> : Table view of information of all available tilesets under this account</p></li>
+<li><p><a class="reference internal" href="#tileset-detail-information-panel"><span class="std std-ref">Tileset Detail Information Panel</span></a>: Detailed information display of a single tileset</p></li>
+</ul>
+</div></blockquote>
+<section id="add-new-tileset-tool">
+<h3><span class="section-number">2.3.1. </span>Add New Tileset Tool<a class="headerlink" href="#add-new-tileset-tool" title="Permalink to this headline"></a></h3>
+<p>The New Tileset can be upload and add to the Map Studio from the Ecopia Map Platform Drives or from the S3 of Amazon.</p>
+<p>Below are the illustrations of both way of adding new tileset to the Map Studio.</p>
+<section id="add-new-tileset-from-drives">
+<h4><span class="section-number">2.3.1.1. </span>Add New Tileset from drives<a class="headerlink" href="#add-new-tileset-from-drives" title="Permalink to this headline"></a></h4>
+<figure class="align-center" id="id16">
+<img alt="Sample Layout of Tilesets Tab" src="_images/addnewtilesetfromdrive.png" style="width: 500px;" />
+<figcaption>
+<p><span class="caption-text"><em>Dialog of Add New Tileset from Drives</em></span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Asset Name</strong>: provide tileset with desired name</p>
+<p><strong>Description</strong>: provide some description of the data that is being used to create this tileset</p>
+<p><strong>Asset Type</strong>: specify the type of data that is used for this tileset</p>
+<p><strong>Asset Path</strong>: provide path information for tileset from “My Drive” on the platform.</p>
+</section>
+<section id="add-new-tileset-from-s3">
+<h4><span class="section-number">2.3.1.2. </span>Add New Tileset from S3<a class="headerlink" href="#add-new-tileset-from-s3" title="Permalink to this headline"></a></h4>
+<figure class="align-center" id="id17">
+<img alt="Sample Layout of Tilesets Tab" src="_images/addnewtilesetfroms3.png" style="width: 500px;" />
+<figcaption>
+<p><span class="caption-text"><em>Dialog of Add New Tileset from S3</em></span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If users choose to create new tileset from S3, the following addtional information is required:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Asset Type</p></li>
+<li><p>Access Key ID</p></li>
+<li><p>Secret Access Key</p></li>
+<li><p>Bucket</p></li>
+<li><p>Prefix</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="tileset-table">
+<h3><span class="section-number">2.3.2. </span>Tileset Table<a class="headerlink" href="#tileset-table" title="Permalink to this headline"></a></h3>
+<p>The uploaded tilesets will be presented in a tabular format, including fundamental details about each one. To access further information about a specific tileset, simply click on it, the selected tileset will highlighted in light-blue and a detailed information panel will appear on the right-hand side of the window.</p>
+<section id="tileset-type">
+<h4><span class="section-number">2.3.2.1. </span>Tileset Type<a class="headerlink" href="#tileset-type" title="Permalink to this headline"></a></h4>
+<p>There are four types of tileset (Asset) are supported in our platform:</p>
+<ul class="simple">
+<li><p><strong>2D Tiles (mvt)</strong> - 2D vectors in shapefile format (zip)</p></li>
+<li><dl class="simple">
+<dt><strong>3D TIles (tileset)</strong> - 3D vectors in shapefile format (zip) with height specification. Two of the following three values need to be spcified to create the tileset.</dt><dd><ul>
+<li><p><strong>Abs Height</strong> - height of the building roof above sea level</p></li>
+<li><p><strong>Rel Height</strong> - height of the building itself</p></li>
+<li><p><strong>Dtm Height</strong> - height of the button of the building above sea level</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><strong>Raster Terrain</strong> (terrain_provider) : This is a Base Map Type that shows the terrain shape of the map area</p></li>
+<li><p><strong>Raster Imagery</strong> (imagery_layer) : A type of base map that shows the satellite imagery of the map area</p></li>
+</ul>
+<figure class="align-center" id="id18">
+<img alt="Four Supported Types of Tilesets" src="images/TilesetType.png" style="width: 500px;" />
+<figcaption>
+<p><span class="caption-text"><em>Dialog of Add New Tileset</em></span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="tilesets-actions">
+<h4><span class="section-number">2.3.2.2. </span>Tilesets Actions<a class="headerlink" href="#tilesets-actions" title="Permalink to this headline"></a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="guilabel">Delete</span> : Delete this tileset permanently.</p></li>
+<li><p><span class="guilabel">Rename</span> Rename the tileset.</p></li>
+<li><p><span class="guilabel">Share</span> Share this tileset with other accounts</p></li>
+<li><p><span class="guilabel">Make it Public</span> Change the Accessibility level to other users.</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="tileset-detail-information-panel">
+<h3><span class="section-number">2.3.3. </span>Tileset Detail Information Panel<a class="headerlink" href="#tileset-detail-information-panel" title="Permalink to this headline"></a></h3>
+<figure class="align-center" id="id19">
+<img alt="Layout of Tileset Detail Panel" src="_images/Tileset_detail_panel_layout.png" style="width: 500px;" />
+<figcaption>
+<p><span class="caption-text"><em>Layout of Tileset Detail Panel</em></span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>This panel is silimar to the map detail panel, it will shows more details with an interactive preview of the highlighted tileset that you selected, below are the components of the Map Details Panel:</p>
+<blockquote>
+<div><ul>
+<li><p><strong>Tileset Title</strong> This is the Map Title that can be set up in the Map Style Editor.</p></li>
+<li><p><strong>Tileset ID</strong>: This is the unique ID that can be used to identify this map.</p></li>
+<li><p><strong>Interactive Tileset Preview</strong>: This is an interactive preview box to help you browse the converted tileset in a quick and simple way.</p></li>
+<li><p><strong>Detail Settings</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Types of the tileset</strong>: We have 2D Map Story and 3D Map Scene as the two default Map Type.</p></li>
+<li><p><strong>Date Added</strong>: The Date and timestamp of this tileset was created and added to Map Studio.</p></li>
+<li><p><strong>Date Updated</strong>: The Date and timestamp of this tileset when it was last edited.</p></li>
+<li><p><strong>Publish Status</strong>: The Status of whether this tileset is published or not.</p></li>
+<li><p><strong>Download link of demo HTML file</strong>: The demo HTML file that can be used to visualize the tileset in your local or your own host.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="asynchronous-job-window">
+<h3><span class="section-number">2.3.4. </span>Asynchronous Job Window<a class="headerlink" href="#asynchronous-job-window" title="Permalink to this headline"></a></h3>
+<p>The Asynchronous Job Window is located in the lower right corner of the window, it shows the progress of each upload task (tilesets), and you can track the progress.
+You can also see this async job in the upper right corner of the Ecopia map platform to keep track of your queued async jobs.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="tokens-tab">
+<h2><span class="section-number">2.4. </span>Tokens Tab<a class="headerlink" href="#tokens-tab" title="Permalink to this headline"></a></h2>
+<p>The Tokens tab provides comprehensive control over map accessibility, serving as the primary command center for managing all published maps. Through this tab, users can fine-tune their map offerings, ensuring that the appropriate audiences have access to the right maps at the right time.</p>
+<p>An access token provides access to Map Studio resources on behalf of a user. All user accounts have a default public token named default_token. Additional tokens can be created to grant additional, or more limited, privileges.</p>
+<section id="create-new-tokens">
+<h3><span class="section-number">2.4.1. </span>Create New Tokens<a class="headerlink" href="#create-new-tokens" title="Permalink to this headline"></a></h3>
+<p>To create the authorization token, click on <span class="guilabel">New Token</span> button.</p>
+<figure class="align-center" id="id20">
+<img alt="Example of usage purpose created for a content" src="_images/create_token.png" style="width: 500px;" />
+<figcaption>
+<p><span class="caption-text"><em>Create New Token</em></span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The following settings are available for users to customize the new token:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Name</strong>: name for the token</p></li>
+<li><p><strong>Description</strong>: short description for the token</p></li>
+<li><p><strong>Token Scope</strong>: access control to available map stories/demos. Select stories/demo from the list of which can be accessed via this token.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="access-token-table">
+<h3><span class="section-number">2.4.2. </span>Access Token Table<a class="headerlink" href="#access-token-table" title="Permalink to this headline"></a></h3>
+<figure class="align-center" id="id21">
+<img alt="Example of usage purpose created for a content" src="_images/access_tokens.png" />
+<figcaption>
+<p><span class="caption-text"><em>Access Token Table</em></span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The Access Token Table is listing all the tokens have been created by the user. Users can view all information of all tokens in use.</p>
+</section>
+<section id="token-scope">
+<h3><span class="section-number">2.4.3. </span>Token scope<a class="headerlink" href="#token-scope" title="Permalink to this headline"></a></h3>
+<p>The actions allowed by a token are based on scopes. A scope is a string that often is a resource type and action separated by a colon.
+Tokens will have access to different scopes depending on their account level and other features of their account. For example, the styles:read scope allows read access to styles. Tokens will have access to different scopes depending on their account level and other features of their account.
+Token’s accessibility to map contents are based on Token Scopes. Users either determine the token scopes by selecting the content that is available under this account during the token creation process or update token scopes later on.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="concepts.html" class="btn btn-neutral float-left" title="1. Concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="howtos/CommonOperations.html" class="btn btn-neutral float-right" title="1. Common Operations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Ecopia Tech Corporation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #041527;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #4e4e4f;
+    }
+  </style>
+
+
+</body>
+</html>

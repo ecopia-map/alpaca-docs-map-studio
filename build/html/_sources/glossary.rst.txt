@@ -1,0 +1,17 @@
+**********************
+Glossary
+**********************
+
+.. glossary::
+
+    Milestone Group
+        A collection of milestones that contribute to a project.
+
+    Milestone
+
+       Fundamental markers that signify major accomplishments, pivotal events, or the completion of key deliverables within a project’s timeline.
+
+
+    Task
+
+        A single unit of work broken down from a milestone.
