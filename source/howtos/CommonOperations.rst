@@ -25,7 +25,16 @@ THis function allows users to quickly distribute the capability to view imagery 
 
 **Step 4**: In the pop-up window, click on :guilabel:`Create` to create a new tile service for this tileset
 
-**Step 5**:
+**Step 5**: In the next window, specify the value for **Valid day**, **Min zoom level** and **Max zoom level**. Then click :guilabel:`Commit`
+
+**Step 6**: The window will return to **Export tile service list**, copy the WMTS link and load it to third party softwares
+
+.. figure:: /images/map-studio/CreateWMTS.gif
+   :align: center
+   :alt: Create WMTS
+
+
+   *Create WMTS Link in Map Studio*
 
 
 
