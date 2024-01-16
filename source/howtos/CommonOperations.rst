@@ -8,8 +8,6 @@ Create Demo with Data on the Platform
 
 
 
-Export High-Resolution Imagery
-######################################
 
 Generate Access Link to Demos
 ######################################
