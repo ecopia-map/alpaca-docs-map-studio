@@ -41,7 +41,7 @@ The generated WMTS link should be compatible with most of the common geospatial 
 
 **Step 1**: Open QGIS and create a new project
 
-**Step 2**: Go to the menu bar on the top of the window and navigate to **Layer** -> **Add Layer** -> **Add WMS/WMTS Layer..*
+**Step 2**: Go to the menu bar on the top of the window and navigate to **Layer** -> **Add Layer** -> **Add WMS/WMTS Layer..**
 
 **Step 3**: In the prompt window, under **Layer** tab, click :guilabel:`New`
 
@@ -51,7 +51,12 @@ The generated WMTS link should be compatible with most of the common geospatial 
 
 **Step 6**: The window will switch to **Tileset** tab automatically, click on the imagery layer from the list to select. Click on :guilabel:`Add` to add the imagery tileset to the project
 
+.. figure:: /images/map-studio/QGISAddWMTS.gif
+   :align: center
+   :alt: QGIS Add WMTS
 
+
+   *Using QGIS to Add WMTS*
 
 
 
