@@ -6,6 +6,15 @@ This section covers some common operations within Map Studio.
 Create Demo with Data on the Platform
 ######################################
 
+Create New Tileset
+======================================
+
+Create New Map and Add Tilesets
+======================================
+
+Link 2D/3D Maps
+======================================
+
 
 
 
