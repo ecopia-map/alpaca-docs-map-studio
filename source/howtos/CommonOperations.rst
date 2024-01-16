@@ -34,7 +34,7 @@ Generate Access Link to Demos
    :alt: QGIS Add WMTS
 
 
-   *Using QGIS to Add WMTS*
+   *Generate a Demo Link*
 
 
 
