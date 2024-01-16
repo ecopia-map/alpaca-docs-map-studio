@@ -485,26 +485,20 @@ By clicking the link icon <img alt="link_button" src="_images/link_button.png" s
 <section id="tileset-type">
 <h4><span class="section-number">2.3.2.1. </span>Tileset Type<a class="headerlink" href="#tileset-type" title="Permalink to this headline"></a></h4>
 <p>There are four types of tileset (Asset) are supported in our platform:</p>
-<ul class="simple">
+<ul>
 <li><p><strong>2D Tiles (mvt)</strong> - 2D vectors in shapefile format (zip)</p></li>
-<li><dl class="simple">
-<dt><strong>3D TIles (tileset)</strong> - 3D vectors in shapefile format (zip) with height specification. Two of the following three values need to be spcified to create the tileset.</dt><dd><ul>
+<li><p><strong>3D TIles (tileset)</strong> - 3D vectors in shapefile format (zip) with height attributes. Two of the following three values need to be spcified in the shapefile attributes to create the tileset:</p>
+<blockquote>
+<div><ul class="simple">
 <li><p><strong>Abs Height</strong> - height of the building roof above sea level</p></li>
 <li><p><strong>Rel Height</strong> - height of the building itself</p></li>
 <li><p><strong>Dtm Height</strong> - height of the button of the building above sea level</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 <li><p><strong>Raster Terrain</strong> (terrain_provider) : This is a Base Map Type that shows the terrain shape of the map area</p></li>
 <li><p><strong>Raster Imagery</strong> (imagery_layer) : A type of base map that shows the satellite imagery of the map area</p></li>
 </ul>
-<figure class="align-center" id="id18">
-<img alt="Four Supported Types of Tilesets" src="images/TilesetType.png" style="width: 500px;" />
-<figcaption>
-<p><span class="caption-text"><em>Dialog of Add New Tileset</em></span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
 </section>
 <section id="tilesets-actions">
 <h4><span class="section-number">2.3.2.2. </span>Tilesets Actions<a class="headerlink" href="#tilesets-actions" title="Permalink to this headline"></a></h4>
@@ -520,10 +514,10 @@ By clicking the link icon <img alt="link_button" src="_images/link_button.png" s
 </section>
 <section id="tileset-detail-information-panel">
 <h3><span class="section-number">2.3.3. </span>Tileset Detail Information Panel<a class="headerlink" href="#tileset-detail-information-panel" title="Permalink to this headline"></a></h3>
-<figure class="align-center" id="id19">
+<figure class="align-center" id="id18">
 <img alt="Layout of Tileset Detail Panel" src="_images/Tileset_detail_panel_layout.png" style="width: 500px;" />
 <figcaption>
-<p><span class="caption-text"><em>Layout of Tileset Detail Panel</em></span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Layout of Tileset Detail Panel</em></span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>This panel is silimar to the map detail panel, it will shows more details with an interactive preview of the highlighted tileset that you selected, below are the components of the Map Details Panel:</p>
@@ -562,10 +556,10 @@ You can also see this async job in the upper right corner of the Ecopia map plat
 <section id="create-new-tokens">
 <h3><span class="section-number">2.4.1. </span>Create New Tokens<a class="headerlink" href="#create-new-tokens" title="Permalink to this headline"></a></h3>
 <p>To create the authorization token, click on <span class="guilabel">New Token</span> button.</p>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id19">
 <img alt="Example of usage purpose created for a content" src="_images/create_token.png" style="width: 500px;" />
 <figcaption>
-<p><span class="caption-text"><em>Create New Token</em></span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Create New Token</em></span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following settings are available for users to customize the new token:</p>
@@ -579,10 +573,10 @@ You can also see this async job in the upper right corner of the Ecopia map plat
 </section>
 <section id="access-token-table">
 <h3><span class="section-number">2.4.2. </span>Access Token Table<a class="headerlink" href="#access-token-table" title="Permalink to this headline"></a></h3>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id20">
 <img alt="Example of usage purpose created for a content" src="_images/access_tokens.png" />
 <figcaption>
-<p><span class="caption-text"><em>Access Token Table</em></span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Access Token Table</em></span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The Access Token Table is listing all the tokens have been created by the user. Users can view all information of all tokens in use.</p>

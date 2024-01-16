@@ -389,21 +389,14 @@ Tileset Type
 There are four types of tileset (Asset) are supported in our platform:
 
 * **2D Tiles (mvt)** - 2D vectors in shapefile format (zip)
-* **3D TIles (tileset)** - 3D vectors in shapefile format (zip) with height specification. Two of the following three values need to be spcified to create the tileset.
+* **3D TIles (tileset)** - 3D vectors in shapefile format (zip) with height attributes. Two of the following three values need to be spcified in the shapefile attributes to create the tileset: 
+   
    * **Abs Height** - height of the building roof above sea level
    * **Rel Height** - height of the building itself
    * **Dtm Height** - height of the button of the building above sea level
+   
 * **Raster Terrain** (terrain_provider) : This is a Base Map Type that shows the terrain shape of the map area
 * **Raster Imagery** (imagery_layer) : A type of base map that shows the satellite imagery of the map area
-
-.. figure:: /images/TilesetType.png
-   :align: center
-   :alt: Four Supported Types of Tilesets
-   :width: 500
-
-   *Dialog of Add New Tileset*
-
-
 
 
 Tilesets Actions
