@@ -93,6 +93,19 @@
 </section>
 <section id="generate-access-link-to-demos">
 <h2><span class="section-number">1.3. </span>Generate Access Link to Demos<a class="headerlink" href="#generate-access-link-to-demos" title="Permalink to this headline"></a></h2>
+<p><strong>Step 1</strong>: Under <strong>Maps</strong> tab, locate the map that is going to be used as demo, and click <img alt="more_action_button" src="../_images/more_action_button.png" style="width: 22px;" /></p>
+<p><strong>Step 2</strong>: Select <strong>Publish</strong> from the options</p>
+<p><strong>Step 3</strong>: In the pop-up window, copy the link under <strong>preview only</strong>, and paste it in Notepad</p>
+<p><strong>Step 4</strong>: Close <strong>Publish</strong> window, and navigate to <strong>Tokens</strong> tab</p>
+<p><strong>Step 5</strong>: Under <strong>Tokens</strong> tab, copy the corresponding token.</p>
+<p><strong>Step 6</strong>: Go to Notepad, replace <strong>{your-access-token}</strong> string with the token that just copied in the map link</p>
+<p><strong>Step 7</strong>: Copy and paste the entire edited link to browser and hit enter. Notice that the demo is now showing in the browser</p>
+<figure class="align-center" id="id1">
+<img alt="QGIS Add WMTS" src="../_images/GenerateDemoLink.gif" />
+<figcaption>
+<p><span class="caption-text"><em>Using QGIS to Add WMTS</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="create-wms-wmts-tile-services-for-imagery">
 <h2><span class="section-number">1.4. </span>Create WMS/WMTS Tile Services for Imagery<a class="headerlink" href="#create-wms-wmts-tile-services-for-imagery" title="Permalink to this headline"></a></h2>
@@ -103,10 +116,10 @@
 <p><strong>Step 4</strong>: In the pop-up window, click on <span class="guilabel">Create</span> to create a new tile service for this tileset</p>
 <p><strong>Step 5</strong>: In the next window, specify the value for <strong>Valid day</strong>, <strong>Min zoom level</strong> and <strong>Max zoom level</strong>. Then click <span class="guilabel">Commit</span></p>
 <p><strong>Step 6</strong>: The window will return to <strong>Export tile service list</strong>, copy the WMTS link and load it to third party softwares</p>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id2">
 <img alt="Create WMTS" src="../_images/CreateWMTS.gif" />
 <figcaption>
-<p><span class="caption-text"><em>Create WMTS Link in Map Studio</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Create WMTS Link in Map Studio</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The generated WMTS link should be compatible with most of the common geospatial analysis tools that are available on the market. The following section provides a step-by-step guide of loading WMTS via QGIS.</p>
@@ -116,10 +129,10 @@
 <p><strong>Step 4</strong>: In the prompt <strong>Create a New WMS/WMTS Connection</strong> window, specify the name of the connection and paste URL into corresponding field. Click <span class="guilabel">OK</span> to finish.</p>
 <p><strong>Step 5</strong>: From the dropdown, select the newly added WMTS and click <span class="guilabel">Connect</span></p>
 <p><strong>Step 6</strong>: The window will switch to <strong>Tileset</strong> tab automatically, click on the imagery layer from the list to select. Click on <span class="guilabel">Add</span> to add the imagery tileset to the project</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <img alt="QGIS Add WMTS" src="../_images/QGISAddWMTS.gif" />
 <figcaption>
-<p><span class="caption-text"><em>Using QGIS to Add WMTS</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Using QGIS to Add WMTS</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>

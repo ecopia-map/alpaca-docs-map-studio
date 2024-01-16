@@ -6,11 +6,37 @@ This section covers some common operations within Map Studio.
 Create Demo with Data on the Platform
 ######################################
 
+
+
 Export High-Resolution Imagery
 ######################################
 
 Generate Access Link to Demos
 ######################################
+
+**Step 1**: Under **Maps** tab, locate the map that is going to be used as demo, and click |more_action_button|
+
+**Step 2**: Select **Publish** from the options
+
+**Step 3**: In the pop-up window, copy the link under **preview only**, and paste it in Notepad
+
+**Step 4**: Close **Publish** window, and navigate to **Tokens** tab
+
+**Step 5**: Under **Tokens** tab, copy the corresponding token. 
+
+**Step 6**: Go to Notepad, replace **{your-access-token}** string with the token that just copied in the map link
+
+**Step 7**: Copy and paste the entire edited link to browser and hit enter. Notice that the demo is now showing in the browser
+
+
+.. figure:: /images/map-studio/GenerateDemoLink.gif
+   :align: center
+   :alt: QGIS Add WMTS
+
+
+   *Using QGIS to Add WMTS*
+
+
 
 Create WMS/WMTS Tile Services for Imagery
 ##########################################
