@@ -62,7 +62,7 @@ Each listed map is composed of below components:
             .. figure:: /images/map-studio/publish_info.png
                :align: center
                :alt: Map List Item Illustration
-               :width: 550
+
 
    * :guilabel:`Delete` : Delete this map permanently.
 
@@ -99,7 +99,7 @@ The Map Style Editor can be accessed through the Preview Button |preview_button|
 .. figure:: /images/map-studio/map_style_editor.png
    :align: center
    :alt: Example of Map Style Editor
-   :width: 550
+
 
    *Layout Demo of a 2D Map in Map Style Editor*
 
@@ -115,7 +115,7 @@ General Tools in Map Style Editor:
 .. figure:: /images/map-studio/3d_demo_map_style_editor.png
   :align: center
   :alt: Example of Map Style Editor
-  :width: 550
+
 
   *Layout Demo of 3D Map Specific Tools in Map Style Editor*
 
