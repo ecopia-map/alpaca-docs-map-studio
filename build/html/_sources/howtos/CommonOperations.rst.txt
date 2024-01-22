@@ -3,19 +3,24 @@ Common Operations
 **********************
 This section covers some common operations within Map Studio.
 
-Create Demo with Data on the Platform
-######################################
-
-Create New Tileset
-======================================
+Create Demo with Tilesets on the Platform
+##########################################
 
 Create New Map and Add Tilesets
 ======================================
 
+**Step 1:** Under **Maps** tab, click on :guilabel:`New Map` button;
+
+**Step 2:** In the pop-up window, select between "2D" or "3D", then click :guilabel:`Create` button to create new map, notice that a new blank map is added to the map list;
+
+**Step 3:** Click on |preview_button| to open the map;
+
+**Step 4:** At the top of the interface, click on |Editing| button to change title of the map, see :ref:`tools:Map Title Editing` for more details;
+
+
+
 Link 2D/3D Maps
 ======================================
-
-
 
 
 Generate Access Link to Demos
@@ -136,4 +141,8 @@ The generated WMTS link should be compatible with most of the common geospatial 
     :height: 24
 
 .. |Publish| image:: /images/map-studio/Publish.png
+    :height: 25
+
+
+.. |Editing| image:: /images/map-studio/Editing.png
     :height: 25
