@@ -64,10 +64,9 @@ Each listed map is composed of below components:
                :alt: Map List Item Illustration
                :width: 550
 
-   .. TODO: yining: recommend adding a link here to the section that explains how to publish a map
-
    * :guilabel:`Delete` : Delete this map permanently.
 
+.. Note:: For more information about how to publish and generate a link to map demo, please refer to :ref:`howtos/CommonOperations:Generate Access Link to Demos`. 
 
 Map Details Panel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -345,8 +344,8 @@ The New Tileset can be upload and add to the Map Studio from the Ecopia Map Plat
 Below are the illustrations of both way of adding new tileset to the Map Studio.
 
 
-Add New Tileset from drives
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Add New Tileset from My Drives
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: /images/map-studio/addnewtilesetfromdrive.png
    :align: center
@@ -355,13 +354,12 @@ Add New Tileset from drives
 
    *Dialog of Add New Tileset from Drives*
 
-**Asset Name**: provide tileset with desired name
+The following fields need to be filled to create a new tileset from my drive:
 
-**Description**: provide some description of the data that is being used to create this tileset
-
-**Asset Type**: specify the type of data that is used for this tileset
-
-**Asset Path**: provide path information for tileset from “My Drive” on the platform.
+   * **Asset Name**: provide tileset with desired name
+   * **Description**: provide some description of the data that is being used to create this tileset
+   * **Asset Type**: specify the type of data that is used for this tileset
+   * **Asset Path**: provide path information for tileset from “My Drive” on the platform.
 
 Add New Tileset from S3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -480,11 +478,16 @@ The Access Token Table is listing all the tokens have been created by the user. 
 Token scope
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The actions allowed by a token are based on scopes. A scope is a string that often is a resource type and action separated by a colon.
-Tokens will have access to different scopes depending on their account level and other features of their account. For example, the styles:read scope allows read access to styles. Tokens will have access to different scopes depending on their account level and other features of their account.
 Token’s accessibility to map contents are based on Token Scopes. Users either determine the token scopes by selecting the content that is available under this account during the token creation process or update token scopes later on.
 
-..
+Users can access and manage the token scope by clicking :guilabel:`Edit` in the access token table. In the token scope section, select maps that should be accessible via this token.
+
+.. figure:: /images/map-studio/TokenScope.png
+   :align: center
+   :alt: Edit Token Scope
+   :height: 420
+
+   *Edit Token Scope*
 
 .. |propertiesbutton| image:: /images/map-studio/properties-icon.png
    :width: 28

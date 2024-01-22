@@ -76,7 +76,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#tilesets-tab">2.3. Tilesets Tab</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#add-new-tileset-tool">2.3.1. Add New Tileset Tool</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#add-new-tileset-from-drives">2.3.1.1. Add New Tileset from drives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-new-tileset-from-my-drives">2.3.1.1. Add New Tileset from My Drives</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#add-new-tileset-from-s3">2.3.1.2. Add New Tileset from S3</a></li>
 </ul>
 </li>
@@ -184,11 +184,13 @@
 </ul>
 </div></blockquote>
 </li>
-</ul>
-<ul class="simple">
 <li><p><span class="guilabel">Delete</span> : Delete this map permanently.</p></li>
 </ul>
 </div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For more information about how to publish and generate a link to map demo, please refer to <a class="reference internal" href="howtos/CommonOperations.html#generate-access-link-to-demos"><span class="std std-ref">Generate Access Link to Demos</span></a>.</p>
+</div>
 </section>
 <section id="map-details-panel">
 <h3><span class="section-number">2.1.3. </span>Map Details Panel<a class="headerlink" href="#map-details-panel" title="Permalink to this headline"></a></h3>
@@ -447,18 +449,23 @@
 <h3><span class="section-number">2.3.1. </span>Add New Tileset Tool<a class="headerlink" href="#add-new-tileset-tool" title="Permalink to this headline"></a></h3>
 <p>The New Tileset can be upload and add to the Map Studio from the Ecopia Map Platform Drives or from the S3 of Amazon.</p>
 <p>Below are the illustrations of both way of adding new tileset to the Map Studio.</p>
-<section id="add-new-tileset-from-drives">
-<h4><span class="section-number">2.3.1.1. </span>Add New Tileset from drives<a class="headerlink" href="#add-new-tileset-from-drives" title="Permalink to this headline"></a></h4>
+<section id="add-new-tileset-from-my-drives">
+<h4><span class="section-number">2.3.1.1. </span>Add New Tileset from My Drives<a class="headerlink" href="#add-new-tileset-from-my-drives" title="Permalink to this headline"></a></h4>
 <figure class="align-center" id="id16">
 <img alt="Sample Layout of Tilesets Tab" src="_images/addnewtilesetfromdrive.png" style="width: 500px;" />
 <figcaption>
 <p><span class="caption-text"><em>Dialog of Add New Tileset from Drives</em></span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p><strong>Asset Name</strong>: provide tileset with desired name</p>
-<p><strong>Description</strong>: provide some description of the data that is being used to create this tileset</p>
-<p><strong>Asset Type</strong>: specify the type of data that is used for this tileset</p>
-<p><strong>Asset Path</strong>: provide path information for tileset from “My Drive” on the platform.</p>
+<p>The following fields need to be filled to create a new tileset from my drive:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Asset Name</strong>: provide tileset with desired name</p></li>
+<li><p><strong>Description</strong>: provide some description of the data that is being used to create this tileset</p></li>
+<li><p><strong>Asset Type</strong>: specify the type of data that is used for this tileset</p></li>
+<li><p><strong>Asset Path</strong>: provide path information for tileset from “My Drive” on the platform.</p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="add-new-tileset-from-s3">
 <h4><span class="section-number">2.3.1.2. </span>Add New Tileset from S3<a class="headerlink" href="#add-new-tileset-from-s3" title="Permalink to this headline"></a></h4>
@@ -584,9 +591,14 @@ You can also see this async job in the upper right corner of the Ecopia map plat
 </section>
 <section id="token-scope">
 <h3><span class="section-number">2.4.3. </span>Token scope<a class="headerlink" href="#token-scope" title="Permalink to this headline"></a></h3>
-<p>The actions allowed by a token are based on scopes. A scope is a string that often is a resource type and action separated by a colon.
-Tokens will have access to different scopes depending on their account level and other features of their account. For example, the styles:read scope allows read access to styles. Tokens will have access to different scopes depending on their account level and other features of their account.
-Token’s accessibility to map contents are based on Token Scopes. Users either determine the token scopes by selecting the content that is available under this account during the token creation process or update token scopes later on.</p>
+<p>Token’s accessibility to map contents are based on Token Scopes. Users either determine the token scopes by selecting the content that is available under this account during the token creation process or update token scopes later on.</p>
+<p>Users can access and manage the token scope by clicking <span class="guilabel">Edit</span> in the access token table. In the token scope section, select maps that should be accessible via this token.</p>
+<figure class="align-center" id="id21">
+<img alt="Edit Token Scope" src="_images/TokenScope.png" style="height: 420px;" />
+<figcaption>
+<p><span class="caption-text"><em>Edit Token Scope</em></span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 </section>
