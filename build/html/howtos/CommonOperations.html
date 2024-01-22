@@ -96,9 +96,30 @@
 <p><strong>Step 2:</strong> In the pop-up window, select between “2D” or “3D”, then click <span class="guilabel">Create</span> button to create new map, notice that a new blank map is added to the map list;</p>
 <p><strong>Step 3:</strong> Click on <img alt="preview_button" src="../_images/preview_button.png" style="width: 22px;" /> to open the map;</p>
 <p><strong>Step 4:</strong> At the top of the interface, click on <img alt="Editing" src="../_images/Editing.png" style="height: 25px;" /> button to change title of the map, see <a class="reference internal" href="../tools.html#map-title-editing"><span class="std std-ref">Map Title Editing</span></a> for more details;</p>
+<p><strong>Step 5:</strong> Click on <span class="guilabel">+ Add Vector Tilesets</span> to add vector tilesets;</p>
+<p><strong>Step 6:</strong> Click on <img alt="Base_Map_button" src="../_images/Base_Map_button.png" style="width: 22px;" /> button on the left, click on <span class="guilabel">+ Add Terrain or Imagery Tilesets</span> to add imagery tilesets.</p>
 </section>
 <section id="link-2d-3d-maps">
 <h3><span class="section-number">1.1.2. </span>Link 2D/3D Maps<a class="headerlink" href="#link-2d-3d-maps" title="Permalink to this headline"></a></h3>
+<p><strong>Step 1:</strong> Under <strong>Maps</strong> tab, locate the 3D map that need to be linked with a 2D map;</p>
+<p><strong>Step 2:</strong> Click on <img alt="preview_button" src="../_images/preview_button.png" style="width: 22px;" /> to open the map;</p>
+<p><strong>Step 3:</strong> On the top right corner next to <span class="guilabel">Publish</span> button, click on <img alt="link_button" src="../_images/link_button.png" style="width: 26px;" /> button;</p>
+<p><strong>Step 4:</strong> In the pop-up window, all available 2D maps will be listed, click <img alt="link_button" src="../_images/link_button.png" style="width: 26px;" /> button in the table to link the target 2D map, click <span class="guilabel">Yes</span> to confirm this action;</p>
+<p><strong>Step 5:</strong> Noticed that the selected 2D map name is populated as the <strong>Currently Bound Map</strong>, click <span class="guilabel">Close</span> to close the pop-up window;</p>
+<p><strong>Step 6:</strong> In the map window, noticed that there is a <span class="guilabel">2D</span> button at the bottom right corner, click to swtich to 2D view from 3D.</p>
+<figure class="align-center" id="id1">
+<img alt="Bind 2D Map" src="../_images/Bind2DMap.gif" />
+<figcaption>
+<p><span class="caption-text"><em>Bind 2D Map</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>Only one 2D map can be bound with the corresponding 3D map.</p></li>
+<li><p><img alt="link_button" src="../_images/link_button.png" style="width: 26px;" /> will be greyed out once a 2D map is bound with corresponding 3D map.</p></li>
+</ol>
+</div>
 </section>
 </section>
 <section id="generate-access-link-to-demos">
@@ -110,10 +131,10 @@
 <p><strong>Step 5</strong>: Under <strong>Tokens</strong> tab, copy the corresponding token.</p>
 <p><strong>Step 6</strong>: Go to Notepad, replace <strong>{your-access-token}</strong> string with the token that just copied in the map link</p>
 <p><strong>Step 7</strong>: Copy and paste the entire edited link to browser and hit enter. Notice that the demo is now showing in the browser</p>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id2">
 <img alt="QGIS Add WMTS" src="../_images/GenerateDemoLink.gif" />
 <figcaption>
-<p><span class="caption-text"><em>Generate a Demo Link</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Generate a Demo Link</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -126,10 +147,10 @@
 <p><strong>Step 4</strong>: In the pop-up window, click on <span class="guilabel">Create</span> to create a new tile service for this tileset</p>
 <p><strong>Step 5</strong>: In the next window, specify the value for <strong>Valid day</strong>, <strong>Min zoom level</strong> and <strong>Max zoom level</strong>. Then click <span class="guilabel">Commit</span></p>
 <p><strong>Step 6</strong>: The window will return to <strong>Export tile service list</strong>, copy the WMTS link and load it to third party softwares</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <img alt="Create WMTS" src="../_images/CreateWMTS.gif" />
 <figcaption>
-<p><span class="caption-text"><em>Create WMTS Link in Map Studio</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Create WMTS Link in Map Studio</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The generated WMTS link should be compatible with most of the common geospatial analysis tools that are available on the market. The following section provides a step-by-step guide of loading WMTS via QGIS.</p>
@@ -139,10 +160,10 @@
 <p><strong>Step 4</strong>: In the prompt <strong>Create a New WMS/WMTS Connection</strong> window, specify the name of the connection and paste URL into corresponding field. Click <span class="guilabel">OK</span> to finish.</p>
 <p><strong>Step 5</strong>: From the dropdown, select the newly added WMTS and click <span class="guilabel">Connect</span></p>
 <p><strong>Step 6</strong>: The window will switch to <strong>Tileset</strong> tab automatically, click on the imagery layer from the list to select. Click on <span class="guilabel">Add</span> to add the imagery tileset to the project</p>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id4">
 <img alt="QGIS Add WMTS" src="../_images/QGISAddWMTS.gif" />
 <figcaption>
-<p><span class="caption-text"><em>Using QGIS to Add WMTS</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Using QGIS to Add WMTS</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>

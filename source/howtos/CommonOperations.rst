@@ -17,11 +17,38 @@ Create New Map and Add Tilesets
 
 **Step 4:** At the top of the interface, click on |Editing| button to change title of the map, see :ref:`tools:Map Title Editing` for more details;
 
+**Step 5:** Click on :guilabel:`+ Add Vector Tilesets` to add vector tilesets;
+
+**Step 6:** Click on |Base_Map_button| button on the left, click on :guilabel:`+ Add Terrain or Imagery Tilesets` to add imagery tilesets.
+
 
 
 Link 2D/3D Maps
 ======================================
 
+**Step 1:** Under **Maps** tab, locate the 3D map that need to be linked with a 2D map;
+
+**Step 2:** Click on |preview_button| to open the map;
+
+**Step 3:** On the top right corner next to :guilabel:`Publish` button, click on |link_button| button;
+
+**Step 4:** In the pop-up window, all available 2D maps will be listed, click |link_button| button in the table to link the target 2D map, click :guilabel:`Yes` to confirm this action;
+
+**Step 5:** Noticed that the selected 2D map name is populated as the **Currently Bound Map**, click :guilabel:`Close` to close the pop-up window;
+
+**Step 6:** In the map window, noticed that there is a :guilabel:`2D` button at the bottom right corner, click to swtich to 2D view from 3D.
+
+
+.. figure:: /images/map-studio/Bind2DMap.gif
+   :align: center
+   :alt: Bind 2D Map
+
+
+   *Bind 2D Map*
+
+.. Note:: 
+    1. Only one 2D map can be bound with the corresponding 3D map.
+    2. |link_button| will be greyed out once a 2D map is bound with corresponding 3D map.
 
 Generate Access Link to Demos
 ######################################
