@@ -279,15 +279,18 @@ Captured view for preview / thumbnail is displayed in the detail information pan
 2D-3D Map Attachment Tool |link_button|
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-2D-3D Map Attachment Tool allows users to bind 2D tilesets with 3D tilesets (or other way around), which provide users with the capability to switch between 2D and 3D for target area.
-By clicking the link icon |link_button| on the top right corner of the page, a list of available tilesets for binding will be listed. By clicking on the link icon |link_button|, on the right of selected tilesets, the corresponding 2D/3D layers will be binded with the map.
+2D-3D Map Attachment Tool allows users to bind 3D map with 2D map, which provide users with the capability to switch between 2D and 3D for target area.
+
+By clicking the link icon |link_button| on the top right corner of the page, a list of available tilesets for binding will be listed. By clicking on the link icon |link_button|, on the right of selected tilesets, the corresponding 2D layers will be bound with the 3D map.
 
 .. figure:: /images/map-studio/Attach_3D_to_2D.png
    :align: center
    :alt: The Attachment of 3D scene to 2D story
-
+   :height: 420
 
    *Link 2D-3D Map*
+
+To unlink a 2D map from 3D map, click on |Cancel| button in the **Bind a 2D Map** window. The existing linked 2D map will be unbound.
 
 Publish Map Tool |Publish|
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -526,4 +529,7 @@ Token’s accessibility to map contents are based on Token Scopes. Users either 
     :height: 24
 
 .. |Publish| image:: /images/map-studio/Publish.png
+    :height: 25
+
+.. |Cancel| image:: /images/map-studio/Cancel.png
     :height: 25
